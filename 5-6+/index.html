@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" rel="stylesheet" />
+        <link href="style/style.css" rel="stylesheet"/>
+	<title>Timer</title>
+</head>
+<body>
+	<div class="wrapper">
+	   <header>
+	    <a id="homeLink" title="Online Stopwatch" href="http://www.online-stopwatch.com/" >www.online-stopwatch.com</a>
+	   </header>
+	   <main>
+	       <div class="main_content">
+		   <div id="s1" class="screen s1" style="width: 1600px; left: 0px;">
+		        <div class="timer">
+				   <div class="header-top"></div>
+				   <div class="dispTimer" id="displayScreen">
+				      <span class="hours">0</span> <span>:</span>
+                    <span class="minutes">0</span> <span>:</span>
+                    <span class="seconds">0</span> <span>.</span>
+                    <span class="milliseconds">0</span>
+				   </div>
+				   
+				   <p>
+                        <span class="timecounter" id="mills" style="font-size: 25.5px;margin: 128px 47% 0 47%;">0</span>
+                    </p>
+					 <div class="buttontimer"><div class="header-top"></div>
+                        <div class="but1"><button class="buttons__start">Start</button></div>
+						 
+                        <div class="but2"><button class="button__reset">Reset</button></div>
+                    </div>
+				</div>
+				
+		   </div>
+		   <div id="s2" class="screen s2" style="width: 1600px; visibility: visible; left: -1600px;">
+		        <div class="button1">
+				    <a id="gotoStopwatch" style="background-size: 60px auto; font-size: 16px; line-height: 47.7143px;">
+<span>Stopwatch</span>
+</a>
+				</div>
+				<div class="break"></div>
+				<div class="button2"></div>
+		   </div>
+		   <div id="s3" class="screen s3" style="width: 1600px; left: -1600px;">
+		   
+		   </div>
+		      
+		   </div>
+		  
+	   </main>
+	   <footer>
+	    <div class="bluebar" style="height: 34px;  background-color: #039;">
+             <a id="doBack" title="Back" style="font-size: 19px; " href="index1.html">Back</a>
+</div>
+	   </footer>
+	</div>
+	<div id="circle"></div>
+	 <script src="js/script.js"></script>
+	 <script src="js/script1.js"></script>
+</body>
+</html>

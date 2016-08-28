@@ -1,0 +1,55 @@
+var start= new Date().getTime(),
+    time=0;
+	elapsed = '0.0';
+	
+	function instance() {
+	   time += 100;
+	   elapsed= Math.floor(time / 100) / 10;
+	    if(Math.round(elapsed) == elapsed) { elapsed += '.0'; }
+
+    document.title = elapsed;
+
+    var diff = (new Date().getTime() - start) - time;
+    window.setTimeout(instance, (100 - diff));
+	}
+	window.setTimeout(instance, 100);
+	
+	//по нажатию на кнопку "play/stop", срабатывает функция включающая таймер
+	 function preciousTimer (step) {
+
+//как и в примерах выше, берем DateStamp для оценки
+            var start = new Date().getTime(),
+                time = 0,
+/*а эта переменная появилась из необходимости
+ проводить в четное количество раз больше итераций,
+чем шагов в секвенсоре (точность все еще довольно слабенькая)*/
+                it = 0;
+				/*место для работы секвенсора с матрицей,
+здесь смотрим значения логического массива для
+каждого прохода по планке. */      
+                    if (m == 8) {
+                        m = 0;
+                    };
+                    for (var i = 0; i < 4; i++) {
+                        if (noteArr[i][m]) {
+                            sound[i].play();
+                        };
+                    };
+                    m++;
+                };
+                    it++;
+
+//если за время итерации была нажата кнопка паузы, 
+//выходим из хвостовой рекурсивной цепочки
+                    if (pause) { 
+                        return; 
+                    };
+
+//вызываем следующую итерацию, с учетом задержки
+                    window.setTimeout(instance, (step - diff));
+                
+
+//а это самый первый вызов функции instance(), 
+//после которого начинается последовательный вызов итераций
+            setTimeout(instance, step);
+        

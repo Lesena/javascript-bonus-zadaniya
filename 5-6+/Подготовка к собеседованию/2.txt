@@ -1,0 +1,110 @@
+//«точного» тайминга сводится к вычитанию задержки предыдущего выполнения функции из настоящего. 
+//Можно просто измерить разницу в системном времени между итерациями и вычесть её при следующем вызове.
+(function (){
+
+		//Устанавливаем таймер, +защита от скрытых замыканий
+		//предполагается, что это будет находится в теле функции
+//или методе, в которой/ом, будет устанавливатся таймер.
+
+//очищаем объект в котором лежал счетчик, если он уже существовал до этого.
+window.startTimer = function(){
+var timeout = null;
+
+//инициализируем новый счетчик
+timeout = setTimeout([function], [time]);
+
+//как только интервал закончился, останавливаем счетчик
+function [function]() {
+if (timeout) clearTimeout(timeout);
+}
+ var my_timer = document.getElementById("setTime");
+ var time=my_timer.value;
+ var s = my_timer.value;
+ 
+ if(s==0){
+     alert('Значение не задано',1);
+	 return;
+ }
+ else s--;
+ if(s < 10){
+    s="0"+s;
+ }
+  document.getElementById("setTime").value=+s;
+  setTimeout(startTimer, 1000);
+}
+ var initialTimestamp = Date.now();
+
+    var timeCounted = 0;
+
+    var currentTimestamp;
+
+    var timecounter = document.querySelector('.timecounter');
+
+    var milliseconds = document.querySelector('.milliseconds');
+    var seconds = document.querySelector('.seconds');
+    var minutes = document.querySelector('.minutes');
+    var hours = document.querySelector('.hours');
+
+    function updateStopwatch() {
+
+        currentTimestamp = Date.now() + timeCounted;
+
+        timecounter.innerHTML = currentTimestamp - initialTimestamp;
+
+        milliseconds.innerHTML = (currentTimestamp - initialTimestamp) % 1000;
+
+        var stopwatchSeconds = Math.floor((currentTimestamp - initialTimestamp) / 1000);
+        if (stopwatchSeconds > 59) {
+            stopwatchSeconds = stopwatchSeconds % 60;
+        }
+        seconds.innerHTML = stopwatchSeconds;
+
+        var stopwatchMinutes = Math.floor((currentTimestamp - initialTimestamp) / 1000 / 60);
+        if (stopwatchMinutes > 59) {
+            stopwatchMinutes = stopwatchMinutes % 60;
+        }
+        minutes.innerHTML = stopwatchMinutes;
+
+        var stopwatchHours = Math.floor((currentTimestamp - initialTimestamp) / 1000 / 60 / 60);
+        if (stopwatchHours > 59) {
+            stopwatchHours = stopwatchHours % 60;
+        }
+        hours.innerHTML = stopwatchHours;
+    }
+
+    var startButton = document.querySelector('.buttons__start');
+    var stopButton; // this button doesn't exist untill we press start button
+
+    var intervalPointer;
+
+    function startStopwatch() {
+        initialTimestamp = Date.now(); // get current timestamp
+        intervalPointer = setInterval(updateStopwatch, 1); // start updating time
+
+        // change srat button to stop button
+        startButton.classList.remove('buttons__start');
+        startButton.classList.add('buttons__continue');
+        startButton.innerHTML = 'Continue';
+        stopButton = document.querySelector('.buttons__continue');
+
+        startButton.removeEventListener('click', startStopwatch);
+        stopButton.addEventListener('click', ContinueStopwatch);
+    }
+
+    function stopStopwatch() {
+        clearInterval(intervalPointer); // stops repeating function
+
+        // we must save current time that was already counted
+        timeCounted = currentTimestamp - initialTimestamp;
+
+        stopButton.classList.remove('buttons__stop');
+        stopButton.classList.add('buttons__start');
+        stopButton.innerHTML = 'Start';
+        startButton = document.querySelector('.buttons__start');
+
+        stopButton.removeEventListener('click', stopStopwatch);
+        startButton.addEventListener('click', startStopwatch);
+    }
+
+    startButton.addEventListener('click', startStopwatch);
+})();

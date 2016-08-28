@@ -1,0 +1,5 @@
+//ввіводим значение нажаттой кнопки в текстовое поле
+function daivalue (id) {
+var value = document.getElementById(id).value;
+document.getElementById('chislo').value = value;
+}

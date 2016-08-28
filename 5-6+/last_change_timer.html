@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style/last_change_style.css">
+</head>
+<body>
+ 
+  <div class="wrapper">
+	   <header>
+	    <a id="homeLink" title="Online Stopwatch" href="http://www.online-stopwatch.com/" style="font-size: 9px; line-height: 15.1818px;">www.online-stopwatch.com</a>
+	   </header>
+	   <main>
+	       <div class="main_content">
+		   
+		   <div id="s3" class="screen s3" style="width: 1600px; left: 0px;">
+		   <div id="container" style="font-size:32pt;font-style:italic;color:rgb(0,0,0);font-family:Arial;">
+
+		      <div class="timerScreen">
+			      <div class="header-top"></div>
+				      
+			        <h1 id="timer">00 : 00 . 000</h1>
+					
+                   <button id="toggle"  name="button1" class="buttons__start" >Start</button>
+                   <button id="reset" name="button2"  class="button__reset">Reset</button> 
+					 
+					 
+					 
+					 
+			  </div>
+			  <div class="buttonSpace">
+			    <div class="header-top"></div>
+				<form name="calc" action="" style="display: block;" class="calc_form">
+				<input name="ReadOut" type="Text"	style="size:28px; width:40px;" id="chislo" value="">Часы
+				<input name="ReadOut1" type="Text"	style="size:28px; width:40px;" id="chislo" value="">Минуты
+				<input name="ReadOut2" type="Text"	style="size:28px; width:40px;" id="chislo" value="">секунды
+				
+			
+				<div class="sleft">
+				  <ol>
+				     <li>
+					     <a id="do0" type="Button" value="0" onclick="NumPressed(0)" class="sbutton" style="font-size: 20px; line-height: 23px;">0</a>
+					 </li>
+					 <li>
+					    <a id="do1" type="Button" value="1" onclick="NumPressed(1)" class="sbutton" style="font-size: 20px; line-height: 23px;">1</a>
+					 </li>
+					 <li>
+					     <a id="do2" type="Button" value="2" onclick="NumPressed(2)" class="sbutton" style="font-size: 20px; line-height: 23px;">2</a>
+					 </li>
+					 <li>
+					    <a id="do3" type="Button" value="3" onclick="NumPressed(3)" class="sbutton" style="font-size: 20px; line-height: 23px;">3</a>
+					 </li>
+					 <li>
+					     <a id="do4" type="Button" value="4" onclick="NumPressed(4)" class="sbutton" style="font-size: 20px; line-height: 23px;">4</a>
+					 </li>
+				  </ol>
+				  <div class="header-top"></div>
+				  <ol>
+				     <li>
+					     <a id="do5" type="Button" value="5" onclick="NumPressed(5)" class="sbutton" style="font-size: 20px; line-height: 23px;">5</a>
+					 </li>
+					 <li>
+					    <a id="do6" type="Button" value="6" onclick="NumPressed(6)" class="sbutton" style="font-size: 20px; line-height: 23px;">6</a>
+					 </li>
+					 <li>
+					     <a id="do7" type="Button" value="7" onclick="NumPressed(7)" class="sbutton" style="font-size: 20px; line-height: 23px;">7</a>
+					 </li>
+					 <li>
+					    <a id="do8" type="Button" value="8" onclick="NumPressed(8)" class="sbutton" style="font-size: 20px; line-height: 23px;">8</a>
+					 </li>
+					 <li>
+					     <a id="do9" type="Button" value="9" onclick="NumPressed(9)" class="sbutton" style="font-size: 20px; line-height: 23px;">9</a>
+					 </li>
+				  </ol>
+				  <input name="btnClear" type="Button"
+          	value="Clear" onclick="Clear()" /></td>
+               <input name="btnClearEntry" type="Button"
+          	value="ClearAll" onclick="ClearEntry()" />
+			<span id="times1"></span>
+            <span id="times2"></span>
+            <span id="times3"></span>
+				  <div class="header-top"></div>
+				</div>
+				</form>
+				<div class="sright">
+				  <ol>
+				     <li class="wide">
+					     <a id="doSet" class="sbutton" style="font-size: 18px; line-height: 23px;" href="index3.html" >Set</a>
+						 
+					 </li>
+				  </ol>
+				  <div class="header-top"></div>
+				  <ol>
+				     <li class="wide">
+					     <a id="doUnSet" class="sbutton" style="font-size: 18px; line-height: 23px;">Clear</a>
+					 </li>
+				  </ol>
+				</div>
+			  </div>
+			   
+		   </div>
+		    </div>
+		   </div>
+		  
+	   </main>
+	   <footer>
+	    <div class="bluebar" style="height: 34px;  background-color: #039;">
+             <a id="doBack" title="Back" style="font-size: 19px; ">Back</a>
+</div><h1 id="display" class="text-center">!</h1> 
+	   </footer>
+	</div>
+
+  <script src="js/stopwatch1.js"></script>
+  <script src="js/stopwatch2.js"></script>
+  
+  <script src="js/last_time_follow.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

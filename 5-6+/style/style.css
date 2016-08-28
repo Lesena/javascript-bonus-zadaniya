@@ -1,0 +1,394 @@
+body {
+    font-family: Arial,Helvetica,sans-serif;
+}
+#circle {
+					background-color: pink;
+					height: 100px;
+					left: 50px;
+					position: absolute;
+					top: 50px;
+					width: 100px;	
+					border-radius: 50%;
+				}
+.wrapper{
+  clear: both;
+    display: block;
+    float: left;
+    height: 100%;
+    min-height: 110px;
+    min-width: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+	height: 1000px;
+}
+header{
+ background-color: #039;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 4%;
+    width: 100%;
+}
+#homeLink{
+ color:white;
+ margin:0 45% 0 45%;
+  font-size: 23px; 
+}
+.main_content{
+width: 100%;
+display: block;
+    float: left;
+    height: 82%;
+    position: relative;
+	height: 500px;
+}
+#s1,#s2,#s3{
+visibility: hidden;
+height: 100%;
+
+}
+#s1{
+   left: 0;
+    visibility: visible;
+    width: 1600px;
+	display: block;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#s2{
+    left: -1600px;
+    visibility: visible;
+    width: 1600px;
+	display: block;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#s3{
+    left: -1600px;
+    visibility: visible;
+    width: 1600px;
+	display: block;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.timer{
+   display: block;
+    float: left;
+    height: 50%;
+    position: relative;
+    width: 100%;
+	
+}
+.buttontimer{
+   display: block;
+    float: left;
+    height: 48%;
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+}
+.header-top{
+   float: left;
+    height: 11%;
+    position: relative;
+    width: 100%;
+}
+.dispTimer{
+   font-size: 57px; line-height: 55.6667px; background-color: rgb(230, 233, 255);
+    border: 3px solid #000;
+    border-radius: 20px;
+    display: block;
+    float: left;
+    height: 88%;
+    margin-left: 2%;
+    position: relative;
+    text-align: center;
+    width: 94.5%;
+}
+.dispTimer:hover {
+    color: rgb(158, 158, 158);
+}
+@media (max-width: 800px){
+
+.dispTimer {
+    font-size: 60px;
+    height: 180px;
+    line-height: 180px;
+    margin-top: 20px;
+	position: relative;
+	max-width: 700px;
+    width: 100%;
+    display: block;
+	text-align: center;
+	    background-color: rgb(255, 255, 255);
+    margin: 50px auto;
+    border-radius: 2px;
+    transition: all 0.4s ease-in, box-shadow 0.2s;
+	    cursor: pointer;
+		-webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    overflow: hidden;
+}
+
+}
+#time{
+    font-size: 57px;
+    line-height: 55.6667px;
+	 text-align: center;
+	 width: 222px;
+	 height: 65px;
+}
+.but1{
+display: block;
+    float: left;
+    height: 65%;
+    margin-left: 6%;
+    position: relative;
+    text-align: center;
+    width: 36%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5fcef+0,39f72e+50,04f70d+100 */
+background: #f5fcef; /* Old browsers */
+background: -moz-linear-gradient(top, #f5fcef 0%, #39f72e 50%, #04f70d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f5fcef 0%,#39f72e 50%,#04f70d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f5fcef 0%,#39f72e 50%,#04f70d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5fcef', endColorstr='#04f70d',GradientType=0 ); /* IE6-9 */
+ border: 3px solid #000;
+    border-radius: 15px;
+}
+.but2{
+   display: block;
+    float: right;
+    height: 65%;
+    margin-right: 6%;
+    position: relative;
+    text-align: center;
+    width: 36%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+background: #a90329; /* Old browsers */
+background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+ border: 3px solid #000;
+    border-radius: 15px;
+}
+#doStart{
+  font-size: 17px;
+    line-height: 41.75px;
+    visibility: visible;
+	margin: 10px 5% 10px 5%;
+	 display: block;
+    font-size: 22px;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    cursor: pointer;
+    outline: 0 none;
+    text-decoration: none;
+}
+#doClear{
+  font-size: 17px;
+    line-height: 41.75px;
+    visibility: visible;
+	margin: 10px 5% 10px 7%;
+	 display: block;
+    font-size: 22px;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    cursor: pointer;
+    outline: 0 none;
+    text-decoration: none;
+}
+.bluebar{
+   background-color: #039;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 9%;
+    width: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+#doBack{
+   color: #000;
+    cursor: pointer;
+	
+}
+footer{
+ background-color: #039;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 9%;
+    width: 100%;
+}
+.button1{
+   display: block;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 49.25%;
+}
+.break{
+    background-color: silver;
+    display: block;
+	border: 7px solid black;
+    float: left;
+    height: 100%;
+    width: 0.4%;
+}
+.button2{
+   display: block;
+    float: left;
+    height: 50%;
+    position: relative;
+    width: 24.25%;
+}
+.button3{
+   display: block;
+    float: left;
+    height: 50%;
+    position: relative;
+    width: 24.25%;
+}
+#gotoStopwatch{
+   background-size: 60px auto;
+    font-size: 16px;
+    line-height: 47.7143px;
+	
+	background-color: #fff;
+    background-position: center 66%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+	cursor: pointer;
+	 background-image: url("https://openclipart.org/image/2400px/svg_to_png/34705/tasto-4-architetto-franc-01.png");
+}
+
+#gotoCountdown{
+     background-size: 60px auto;
+    font-size: 16px;
+    line-height: 47.7143px;
+	
+	background-color: #fff;
+    background-position: center 66%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+	cursor: pointer;
+	background-image: url("http://teplavdome.net/wp-content/uploads/2012/07/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.jpg");
+}
+.timerScreen{
+   display: block;
+    float: left;
+    height: 50%;
+    position: relative;
+    width: 100%;
+}
+.buttonSpace{
+   display: block;
+    float: left;
+    height: 48%;
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+}
+#setTime{
+   background-color: #e6e9ff;
+    border: 3px solid #000;
+    border-radius: 20px;
+    display: block;
+    float: left;
+    height: 88%;
+    margin-left: 2%;
+    position: relative;
+    text-align: center;
+    width: 94.5%;
+}
+.sleft{
+  display: block;
+    float: left;
+    height: 80%;
+    width: 72%;
+}
+.sleft ol{
+   display: block;
+    float: left;
+    height: 46%;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+}
+.sleft ol li{
+   display: block;
+    float: left;
+    height: 80%;
+    margin-left: 3%;
+    width: 16%;
+}
+.sbutton{
+  background-color: #0f6;
+    background-image: url("http://www.online-stopwatch.com/html5/images/sb.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 2px solid #000;
+    border-radius: 12px;
+    display: block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+	color: #000;
+    cursor: pointer;
+    outline: 0 none;
+    text-decoration: none;
+}
+.sright{
+display: block;
+    float: left;
+    height: 80%;
+    width: 28%;
+}
+.sright ol{
+  display: block;
+    float: left;
+    height: 46%;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+}
+.sright ol li{
+   width: 85%;
+    display: block;
+    float: left;
+    height: 80%;
+    margin-left: 3%;
+}

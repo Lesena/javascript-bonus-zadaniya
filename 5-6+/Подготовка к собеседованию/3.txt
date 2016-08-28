@@ -1,0 +1,9 @@
+<div class="buttontimer">
+				     <div class="header-top"></div>
+					 <div class="but1">
+					    <a id="doStart" style="font-size: 17px;"  class="buttons__start" onClick="startStopwatch()">Start</a>
+					 </div>
+					 <div class="but2">
+					     <a id="doClear" style="font-size: 17px;" class="button__reset">Clear</a>
+					 </div>
+				</div>
